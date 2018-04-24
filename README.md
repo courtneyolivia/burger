@@ -1,5 +1,6 @@
 # Eat-Da-Burger!
 
+<b>Heroku Link:</b> https://git.heroku.com/burger-eating.git
 
 <b><h1>Overview</h1></b>
 Eat-Da-Burger is a is a restaurant app that lets users input the names of burgers they'd like to eat. It is a burger logger that follows object relational mapping and the MVC design pattern, uses Node and MySQL to query and route data, and Handlebars to generate HTML.
