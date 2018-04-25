@@ -1,16 +1,18 @@
-// Set up MySQL connection.
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'ryoohki8',
-    database: 'burgers_db'
-})
+var mysql = require("mysql");
 
-connection.connect(function(err){
-    if(err)throw err;
-    console.log("connected as id: "+connection.threadid);
+var connection = mysql.createConnection({
+  host: "localhost",
+  user: "courtneyolivia",
+  password: "ryoohki8",
+  database: "burgers_db"
 });
 
-// Export connection for ORM 
+connection.connect(function(err) {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
+});
+
 module.exports = connection;
